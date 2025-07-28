@@ -17,7 +17,7 @@ def index():
             session['user'] = username
             return redirect(url_for('welcome')) 
         else:
-            return Response("Invalid credentials", minetype='text/plain')
+            return Response("Invalid credentials", mimetype='text/plain')
     return '''
         <h2>Login Page</h2>
         <form method="post">
