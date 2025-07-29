@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block tittle%} 
+        My Feedback page{% endblock %}
+    </title>
+    <style> 
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        } 
+        
+        main {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0,
+0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+        </head>
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+        <nav>
+            <a href="/feedback">Feedback</a>
+            </nav>
+            </header>
+            <main>
+                {%block content%} {% endblock %}
+                </main>
+                <footer>
+                    <p>&copy; 2023 My Feedback Page</p>
+                </footer>
+        </body>
+</html>
